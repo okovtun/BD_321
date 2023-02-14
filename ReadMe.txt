@@ -1,4 +1,4 @@
-https://github.com/okovtun/BD_321.git
+п»їhttps://github.com/okovtun/BD_321.git
 https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv1vW
 
 TOREAD:
@@ -7,4 +7,4 @@ https://en.cppreference.com/w/
 https://stackoverflow.com/
 
 TODO:
-Выучить теорию!!!
+Р’С‹СѓС‡РёС‚СЊ С‚РµРѕСЂРёСЋ!!!
