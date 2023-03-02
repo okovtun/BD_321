@@ -21,6 +21,7 @@ using std::endl;
 
 //#define LOGICAL_TYPES
 //#define NUMERIC_TYPES
+//#define DECLARATION_AND_INITIALISATION_OF_VARIABLES
 
 void main()
 {
@@ -56,6 +57,7 @@ void main()
 	cout << DBL_MIN << " ... " << DBL_MAX << endl;
 #endif // NUMERIC_TYPES
 
+#ifdef DECLARATION_AND_INITIALISATION_OF_VARIABLES
 	float Price;
 	//cout << Price << endl;
 
@@ -73,4 +75,31 @@ void main()
 	cout << number_of_cups << endl;
 	double total_price = price_of_coffee * number_of_cups;
 	cout << "Общая стоимость: " << total_price << endl;
+#endif // DECLARATION_AND_INITIALISATION_OF_VARIABLES
+
+	int speed = 0;
+	const int MAX_SPEED = 250;
+	speed = 10;
+	//cout << speed << endl;
+	//MAX_SPEED = 320;	//Expression must be a modifiable l-value
+
+	5;	//числовая константа типа 'int'
+	//По умолчанию целочисленные константы типа 'int'
+	/*cout << sizeof(5) << endl;
+	cout << typeid(5ULL).name() << endl;
+	long long int a;
+	cout << typeid(a).name() << endl;*/
+
+	//По умолчанию вещественные константы типа 'double'
+	5.0;	//числовая константа типа 'double'
+	5.;		//числовая константа типа 'double'
+	0.5;	//числовая константа типа 'double'
+	.5;		//числовая константа типа 'double'
+	//cout << typeid(5.f).name() << endl;
+
+	//Символьная константа - это один единственный символ, заклюенный в одинарные кавычки.
+	cout << typeid('+').name() << endl;
+	cout << sizeof('+') << endl;
+	cout << sizeof("+") << endl;	//NULL terminator
+	cout << sizeof("Hello") << endl;
 }

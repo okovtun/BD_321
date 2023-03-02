@@ -10,7 +10,7 @@ TODO:
 1. Выучить теорию!!!
 2. Решить все задачи из файла:
 	https://github.com/okovtun/BD_321/blob/master/DataTypes/VariablesTask.pdf
-
+3. Почитать: https://legacy.cplusplus.com/doc/tutorial/constants/
 DONE:
 1. Выучить теорию!!!
 2. Используя оператор sizeof() и макросы Visual Studio вывести в консоль информацию 
