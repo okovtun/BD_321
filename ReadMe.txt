@@ -8,6 +8,11 @@ https://stackoverflow.com/
 
 TODO:
 1. Выучить теорию!!!
+2. Решить все задачи из файла:
+	https://github.com/okovtun/BD_321/blob/master/DataTypes/VariablesTask.pdf
+
+DONE:
+1. Выучить теорию!!!
 2. Используя оператор sizeof() и макросы Visual Studio вывести в консоль информацию 
    о всех изученных числовых типах.
 
