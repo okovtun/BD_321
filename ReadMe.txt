@@ -6,7 +6,20 @@ https://legacy.cplusplus.com/
 https://en.cppreference.com/w/
 https://stackoverflow.com/
 
+devenv:
+https://www.youtube.com/watch?v=cLBwgKNIlNw
+
 TODO:
+1. Выучить теорию!!!
+2. Поменять местами две переменные:
+	int a = 2, b = 3;
+	cout << a << "\t" << b << endl;
+	.....
+	.....
+	.....
+	cout << a << "\t" << b << endl;
+
+DONE:
 1. Выучить теорию!!!
 2. Решить все задачи из файла:
 	https://github.com/okovtun/BD_321/blob/master/DataTypes/VariablesTask.pdf
