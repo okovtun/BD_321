@@ -1,10 +1,21 @@
 https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv1vW
 
 TOREAD:
+https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml !!!
+https://www.ixbt.com/cpu/cpu-digest-2009.shtml
+
+TODO:
+При помощи CPU-Z и AIDA-64 опрделить дополнительные наборы инстукций своего CPU
+
+-----------------------------------------------------------------
+
+COMPLETE:
+
+TOREAD:
 https://www.ixbt.com/mainboard/ddr3-rmma.shtml
 https://www.ixbt.com/mainboard/ddr2-rmma.shtml
 
-TODO:
+DONE:
 1. Для каждого типа микросхем памяти найти техпроцесс и напряжение питания;
 2. Напомнить преподавателю про маркировку модулей памяти.
 
