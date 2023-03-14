@@ -11,6 +11,9 @@ https://www.youtube.com/watch?v=cLBwgKNIlNw
 
 TODO:
 1. Выучить теорию!!!
+
+DONE:
+1. Выучить теорию!!!
 2. Поменять местами две переменные:
 	int a = 2, b = 3;
 	cout << a << "\t" << b << endl;
