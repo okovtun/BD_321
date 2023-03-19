@@ -5,6 +5,9 @@ https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml !!!
 https://www.ixbt.com/cpu/cpu-digest-2009.shtml
 
 TODO:
+https://www.youtube.com/watch?v=z0jQZxH7NgM
+
+DONE:
 1. Выучить теорию!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 2. Вычислить максимальный объем адресуемой памяти для архитектуры x86-64.
 
