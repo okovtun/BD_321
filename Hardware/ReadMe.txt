@@ -5,6 +5,22 @@ https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml !!!
 https://www.ixbt.com/cpu/cpu-digest-2009.shtml
 
 TODO:
+Используя сайт ark.intel.com выписать сокеты всех поколений CPU 
+с двухканальным и четырехканальным контроллеров памяти.
+Так же выписать года когда появились эти CPU и сокеты.
+
+CPU manufacturing:
+https://ark.intel.com/
+https://www.youtube.com/watch?v=tOS3Exwhd9w&t=1s
+https://www.chipdip.ru/info/import-ic-packages
+
+IHS:
+https://www.youtube.com/watch?v=UXlnq8ETYVk
+https://www.youtube.com/watch?v=UXlnq8ETYVk
+https://www.youtube.com/watch?v=UXlnq8ETYVk
+https://www.youtube.com/watch?v=UXlnq8ETYVk
+
+TODO:
 https://www.youtube.com/watch?v=z0jQZxH7NgM
 
 DONE:
