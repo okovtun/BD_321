@@ -1,67 +1,53 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-//#define CALC_IF
-//#define CALC_SWITCH
-//#define LOOP
+#define delimiter "----------------------------------------------------------------------------------------\n"
+#define FACTORIAL
+#define POWER
 
+void ascii()
+{
+	cout << "ASCII" << endl;
+	for (int i = 0; i <= 255; i++)
+	{
+		cout << (char)i;
+		if ((i + 1) % 16 == 0)
+		{
+			cout << endl;
+		}
+	}
+	cout << delimiter;
+}
 
 void main()
 {
+	ascii();
 	setlocale(LC_ALL, "");
-#ifdef CALC_IF
-	//cout << "Calc " << endl;
-	double a, b; // числа вводимые с клавиатуры
-	char s; // sing знак операции
-	cout << "Введите простое арифметическое выражение: ";
-	cin >> a >> s >> b;
-	if (s == '+')
+	ascii();						//после setlocale некоторые символы меняются на другие или на вопросики
+#ifdef FACTORIAL
+	cout << "Factorial" << endl;
+	int num;
+	int factorial = 1;
+	cout << "Введите число: "; cin >> num;
+	for (int i = 1; i <= num; i++)
 	{
-		cout << a << " + " << b << " = " << a + b << endl;
+		factorial *= i;
 	}
-	else if (s == '-')
-	{
-		cout << a << " - " << b << " - " << a - b << endl;
-	}
-	else if (s == '*')
-	{
-		cout << a << " * " << b << " = " << a * b << endl;
-	}
-	else if (s == '/')
-	{
-		cout << a << " / " << b << " = " << a / b << endl;
-	}
-	else
-	{
-		cout << "Error Operation " << endl;
-	}
+	cout << num << "! = " << factorial << endl;
+	cout << delimiter;
 #endif
-#ifdef CALC_SWITCH
-	double a, b;
-	char s;
-	cout << "Введите простое арифмитическое выражение: "; cin >> a >> s >> b;
-	switch (s)
+#ifdef POWER
+	cout << "Power" << endl;
+	int a;
+	int n;
+	cout << "Введите основание степени: "; cin >> a;
+	cout << "В какую степень возводить: "; cin >> n;
+	int power = 1;
+	for (int i = 1; i <= n; i++)
 	{
-	case '+': cout << a << " + " << b << " = " << a + b << endl; break;
-	case '-': cout << a << " - " << b << " = " << a - b << endl; break;
-	case '*': cout << a << " * " << b << " = " << a * b << endl; break;
-	case '/': cout << a << " / " << b << " = " << a / b << endl; break;
-	default: cout << "Error Operation " << endl;
+		power *= a;
 	}
-#endif
-#ifdef LOOP
-	int  buffer, reverse, k, number;
-	cout << "Введите число: "; cin >> number;
-	buffer = number;
-	reverse = 0;
-
-	while (number != 0)
-	{
-		k = number % 10;
-		number = number / 10;
-		reverse = reverse * 10 + k;
-	}
-	if (buffer == reverse)
-		cout << "Палиндром "; else cout << "Не палиндром" << endl;
+	cout << a << "^" << n << " = " << power << endl;
+	cout << delimiter;
 #endif
 }
