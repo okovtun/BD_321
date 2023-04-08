@@ -1,5 +1,11 @@
 https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv1vW
 
+Mainboard:
+https://www.ixbt.com/platform/asus-rog-strix-z790-a-gaming-wifi-d4-review.html#n1
+https://www.ixbt.com/platform/gigabyte-b650e-aorus-master-review.html
+
+https://ru.gecid.com/mboard/asus_rog_strix_z690-f_gaming_wifi/
+
 TOREAD:
 https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml !!!
 https://www.ixbt.com/cpu/cpu-digest-2009.shtml
