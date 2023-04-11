@@ -1,5 +1,8 @@
 https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv1vW
 
+TODO:
+Подготовить доклад о шине USB
+
 Mainboard:
 https://www.ixbt.com/platform/asus-rog-strix-z790-a-gaming-wifi-d4-review.html#n1
 https://www.ixbt.com/platform/gigabyte-b650e-aorus-master-review.html

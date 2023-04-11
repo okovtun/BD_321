@@ -10,6 +10,11 @@ devenv:
 https://www.youtube.com/watch?v=cLBwgKNIlNw
 
 TODO:
+1. Добить фигуры из прошлой домашки;
+2. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg;
+3. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/HardChess.jpg;
+
+DONE:
 Вывести в консоль все фигуры из файла:
 	https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/Geometria1.txt
 Размер фигуры пользоватль вводит с клавиатуры.
