@@ -13,6 +13,7 @@ TODO:
 1. Добить фигуры из прошлой домашки;
 2. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg;
 3. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/HardChess.jpg;
+4.*** Вывести на экран треугольник Паскаля;
 
 DONE:
 Вывести в консоль все фигуры из файла:

@@ -1,69 +1,24 @@
 #include <iostream>
 using namespace std;
-#define delimetr "------------------------"
+
 void main()
 {
-	setlocale(LC_ALL, "");
-
-	char a = '*';
-	int size;
-	cout << "¬ведите размер: "; cin >> size;
-	// 1 фигура
+	setlocale(LC_ALL, "Rus");
+	int n = 5;
+	int size; cout << "¬ведите размер доски: "; cin >> size;
 	for (int i = 0; i < size; i++)
 	{
-		for (int j = 0; j < size; j++)
+		for (int j = 0; j < size*n; j++)
 		{
-			cout << a;
-		}
-		cout << endl;
-	}
-	cout << delimetr << endl;
-	// 2 фигура
-	for (int i = 0; i <= size; i++)
-	{
-		for (int j = 0; j < i; j++)
-		{
-			cout << a;
-		}
-		cout << endl;
-	}
-
-	cout << delimetr << endl;
-	// 3 фигура
-	for (int i = size; i >= 0; i--)
-	{
-		for (int j = 0; j < i; j++)
-		{
-			cout << a;
-		}
-		cout << endl;
-		if (i == 0)
-		{
-			break;
-		}
-	}
-
-	cout << delimetr << endl;
-
-	// 4,5,6 - не получилось
-
-
-	// 7 фигура
-	for (int i = 0; i < size; i++)
-	{
-		for (int j = 0; j < size; j++)
-		{
-			if (j % 2 == 0)
+			if ((i + j) % 2 == 0)
 			{
-				cout << "+";
+				for (int k = 0; k < n; k++)cout << "* ";
 			}
 			else
 			{
-				cout << "-";
+				for (int k = 0; k < n; k++)cout << "  ";
 			}
 		}
 		cout << endl;
-
 	}
-
 }
