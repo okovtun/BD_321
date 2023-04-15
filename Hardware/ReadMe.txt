@@ -1,6 +1,10 @@
 https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv1vW
 
 TODO:
+1. Каким НЕ должен быть корпус: https://www.ixbt.com/supply/chieftec-ue-02b-op-review.html
+2. Каким должен быть корпус:	https://www.ixbt.com/supply/nzxt-h710i-review.html
+
+DONE:
 Подготовить доклад о шине USB
 
 Mainboard:
