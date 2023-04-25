@@ -1,6 +1,8 @@
 ﻿https://github.com/okovtun/BD_321.git
 https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv1vW
 
+https://t.me/+ovxoPDMg4ZA0Yzk6
+
 TOREAD:
 https://legacy.cplusplus.com/
 https://en.cppreference.com/w/
@@ -10,6 +12,9 @@ devenv:
 https://www.youtube.com/watch?v=cLBwgKNIlNw
 
 TODO:
+1. Выбрать пять проектов, и залить из на GitHub;
+
+DONE:
 1. Добить фигуры из прошлой домашки;
 2. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg;
 3. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/HardChess.jpg;

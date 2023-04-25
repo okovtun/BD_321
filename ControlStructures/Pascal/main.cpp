@@ -17,7 +17,7 @@ void main()
 	fontex.FontWeight = 400;
 	fontex.dwFontSize.X = 5;
 	fontex.dwFontSize.Y = 10;
-	SetCurrentConsoleFontEx(hConsole, 0, &fontex);
+	//SetCurrentConsoleFontEx(hConsole, 0, &fontex);
 
 	//CONSOLE_SCREEN_BUFFER_INFOEX scbi{ sizeof(CONSOLE_SCREEN_BUFFER_INFOEX) };
 	//GetConsoleScreenBufferInfoEx(hConsole, &scbi);

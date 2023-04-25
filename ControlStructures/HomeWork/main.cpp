@@ -1,43 +1,38 @@
-#include <iostream>
-#include <iomanip>
-#include<string>
-#include <vector>
+#include<iostream>
 using namespace std;
-
-string multistring(string str, int times)
-{
-	string result;
-	while (times > 0)
-	{
-		result += str;
-		times--;
-	}
-	return result;
-}
 
 void main()
 {
-	setlocale(LC_ALL, "");
+	setlocale(LC_ALL, "rus");
 	int n;
-	cout << "Введите высоту треугольника: "; cin >> n; n--;
-	while (n < 0 || n > 20)
+
+	cout << "Введите количество строк: ";
+	cin >> n;
+
+	for (int i = 0; i < n; i++)
 	{
-		cout << "Невозможная высота треугольника. Повторите ввод: "; cin >> n; n--;
-	}
-	vector<int> v(n + 1);
-	v[0] = 1;
-	cout << multistring("   ", n) << v[0] << endl;
-	for (int i = 1; i <= n; i++)
-	{
-		for (int j = i; j >= 1; j--)
+		int coef = 1;
+		// добавляем пробелы перед строкой
+		for (int j = 1; j <= n - i; j++)
 		{
-			v[j] = v[j - 1] + v[j];
+			cout.width(4);
+			cout << "  ";
 		}
-		cout << multistring("   ", n - i);
+		// выводим значения в строке
 		for (int j = 0; j <= i; j++)
 		{
-			cout << std::left << std::setw(6) << v[j];
+			cout.width(8);
+			cout << coef /*<< "  "*/;
+			coef = coef * (i - j) / (j + 1);
 		}
 		cout << endl;
 	}
+
+	// Этот код позволяет вывести на экран треугольник Паскаля для заданного n.
+	// Для каждой строки треугольника (i - ой строки, начиная с 0)
+	// вычисляются i + 1 коэффициентов с помощью формулы сочетания : coef = coef * (i - j) / (j + 1). 
+	// Первый цикл выводит пробелы для отступа, чтобы треугольник был выровнен по центру.
+	// Второй цикл выводит коэффициенты i - ой строки.
+	// Использование переменной coef для хранения текущего коэффициента позволяет вычислять следующий коэффициент через предыдущий.
+	// Переход на следующую строку происходит с помощью команды endl.
 }
