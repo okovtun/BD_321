@@ -3,6 +3,9 @@ https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv
 https://t.me/+ovxoPDMg4ZA0Yzk6
 
 TODO:
+https://ru.gecid.com/power/sovremennyee_bloki_pitaniya_atx_i_ih_harakteristiki/
+
+DONE:
 1. ќценить производителей корпусов: Cougar, be quite, Fractal Design, LianLi, MSI, NZXT;
 
 https://www.evga.com/products/E1-bare-bones/
