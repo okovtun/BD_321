@@ -3,7 +3,7 @@ https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv
 https://t.me/+ovxoPDMg4ZA0Yzk6
 
 TODO:
-Собрать мощный компьютер для игр и 3D-приложений на базе Intel. Подобрать следующие комплектующие:
+Собрать мощный компьютер для игр и 3D-приложений на базе AMD. Подобрать следующие комплектующие:
 1. CPU;
 2. MB;
 3. RAM;
