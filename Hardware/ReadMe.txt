@@ -3,6 +3,10 @@ https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv
 https://t.me/+ovxoPDMg4ZA0Yzk6
 
 TODO:
+https://developer.nvidia.com/blog/nvidia-ampere-architecture-in-depth/
+https://www.ixbt.com/video3/guide.shtml
+
+DONE:
 Собрать мощный компьютер для игр и 3D-приложений на базе Intel. Подобрать следующие комплектующие:
 1. CPU;
 2. MB;

@@ -1,4 +1,5 @@
 #include<iostream>
+#include<time.h>
 using namespace std;
 
 #define tab "\t"
@@ -6,7 +7,7 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "");
-	const int n = 5;
+	const int n = 250000;
 	int arr[n];
 
 	//rand();	//Возвращает псевдослучайное число в диапазоне от 0 до 32 767 (MAX_RAND)
@@ -40,10 +41,35 @@ void main()
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
 	}
+	cout << "Массив заполнен" << endl;
 
-	for (int i = 0; i < n; i++)
+	/*for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
 	}
-	cout << endl;
+	cout << endl;*/
+	clock_t t_start = clock();
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = i + 1; j < n; j++)
+		{
+			//arr[i] - выбранный элемент
+			//arr[j] - перебираемый элемент
+			if (arr[j] < arr[i])
+			{
+				int buffer = arr[i];
+				arr[i] = arr[j];
+				arr[j] = buffer;
+			}
+		}
+	}
+	clock_t t_end = clock();
+
+	cout << "Массив отсортирован за " << double(t_end - t_start) / CLOCKS_PER_SEC << endl;
+
+	/*for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << tab;
+	}
+	cout << endl;*/
 }
