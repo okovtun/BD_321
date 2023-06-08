@@ -3,6 +3,9 @@ https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv
 https://t.me/+ovxoPDMg4ZA0Yzk6
 
 TODO:
+https://rlab.ru/doc/hdd_from_inside.html
+
+DONE:
 https://laptopmedia.com/top-laptop-pwm-ranking-rated-by-negative-impact-on-eyesight/#Lenovo
 
 DONE:
