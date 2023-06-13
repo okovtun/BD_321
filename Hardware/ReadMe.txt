@@ -4,6 +4,7 @@ https://t.me/+ovxoPDMg4ZA0Yzk6
 
 TODO:
 https://rlab.ru/doc/hdd_from_inside.html
+https://www.youtube.com/watch?v=7onkTUts_-w&t=216s - смотреть обязательно!!!
 
 DONE:
 https://laptopmedia.com/top-laptop-pwm-ranking-rated-by-negative-impact-on-eyesight/#Lenovo
