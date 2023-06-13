@@ -5,9 +5,16 @@ using namespace std;
 #define delimiter "\n----------------------------------\n"
 
 void FillRand(int arr[], const int n);
+void FillRand(double arr[], const int n);
+
 void Print(const int arr[], const int n);
+void Print(const double arr[], const int n);
+
 void Sort(int arr[], const int n);
+
 int  Sum(const int arr[], const int n);
+double Sum(const double arr[], const int n);
+
 double Avg(const int arr[], const int n);
 int minValueIn(const int arr[], const int n);
 int maxValueIn(const int arr[], const int n);
@@ -28,16 +35,16 @@ void main()
 	Print(arr, n);
 
 	const int SIZE = 8;
-	int brr[SIZE];
+	double brr[SIZE];
 
 	FillRand(brr, SIZE);
 	Print(brr, SIZE);
 	cout << "Сумма элементов массива: " << Sum(brr, SIZE) << endl;
-	cout << "Среднее-арифметическое элементов массива: " << Avg(brr, SIZE) << endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(brr,  SIZE) << endl;
-	cout << "Максимальное значение в массиве: " << maxValueIn(brr, SIZE) << endl;
-	Sort(brr, SIZE);
-	Print(brr, SIZE);
+	//cout << "Среднее-арифметическое элементов массива: " << Avg(brr, SIZE) << endl;
+	//cout << "Минимальное значение в массиве: " << minValueIn(brr,  SIZE) << endl;
+	//cout << "Максимальное значение в массиве: " << maxValueIn(brr, SIZE) << endl;
+	//Sort(brr, SIZE);
+	//Print(brr, SIZE);
 }
 
 void FillRand(int arr[], const int n)
@@ -48,6 +55,16 @@ void FillRand(int arr[], const int n)
 		arr[i] = rand() % 100;
 	}
 }
+void FillRand(double arr[], const int n)
+{
+	//Заполнение массива случайными числами:
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() % 10000;
+		arr[i] /= 100;
+	}
+}
+
 void Print(const int arr[], const int n)
 {
 	//Вывод массива на экран:
@@ -57,6 +74,16 @@ void Print(const int arr[], const int n)
 	}
 	cout << endl;
 }
+void Print(const double arr[], const int n)
+{
+	//Вывод массива на экран:
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << tab;
+	}
+	cout << endl;
+}
+
 void Sort(int arr[], const int n)
 {
 	//Сортировка массива:
@@ -82,6 +109,16 @@ int  Sum(const int arr[], const int n)
 	}
 	return sum;
 }
+double Sum(const double arr[], const int n)
+{
+	double sum = 0;
+	for (int i = 0; i < n; i++)
+	{
+		sum += arr[i];
+	}
+	return sum;
+}
+
 double Avg(const int arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;
