@@ -3,6 +3,9 @@ https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv
 https://t.me/+ovxoPDMg4ZA0Yzk6
 
 TODO:
+Почитать: http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
+
+DONE:
 https://rlab.ru/doc/hdd_from_inside.html
 https://www.youtube.com/watch?v=7onkTUts_-w&t=216s - смотреть обязательно!!!
 
