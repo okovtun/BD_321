@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Recursion", "Recursion\Recu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TicTacToe", "TicTacToe\TicTacToe.vcxproj", "{BCB7E3D5-9125-479C-8C6F-45A21620D531}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork", "HomeWork\HomeWork.vcxproj", "{DBD9E292-8717-4787-BA9B-54275E9BA946}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{BCB7E3D5-9125-479C-8C6F-45A21620D531}.Release|x64.Build.0 = Release|x64
 		{BCB7E3D5-9125-479C-8C6F-45A21620D531}.Release|x86.ActiveCfg = Release|Win32
 		{BCB7E3D5-9125-479C-8C6F-45A21620D531}.Release|x86.Build.0 = Release|Win32
+		{DBD9E292-8717-4787-BA9B-54275E9BA946}.Debug|x64.ActiveCfg = Debug|x64
+		{DBD9E292-8717-4787-BA9B-54275E9BA946}.Debug|x64.Build.0 = Debug|x64
+		{DBD9E292-8717-4787-BA9B-54275E9BA946}.Debug|x86.ActiveCfg = Debug|Win32
+		{DBD9E292-8717-4787-BA9B-54275E9BA946}.Debug|x86.Build.0 = Debug|Win32
+		{DBD9E292-8717-4787-BA9B-54275E9BA946}.Release|x64.ActiveCfg = Release|x64
+		{DBD9E292-8717-4787-BA9B-54275E9BA946}.Release|x64.Build.0 = Release|x64
+		{DBD9E292-8717-4787-BA9B-54275E9BA946}.Release|x86.ActiveCfg = Release|Win32
+		{DBD9E292-8717-4787-BA9B-54275E9BA946}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

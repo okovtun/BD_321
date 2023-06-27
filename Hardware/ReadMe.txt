@@ -3,7 +3,12 @@ https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv
 https://t.me/+ovxoPDMg4ZA0Yzk6
 
 TODO:
-Почитать: http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
+1. Почитать: http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
+2. https://www.ntfs.com/index.html
+3. Используя программу WinHEX определить количетво и размер разделов на своем диске;
+4. Установить программу VMware Workstation:
+	https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
+	https://gist.github.com/PurpleVibe32/30a802c3c8ec902e1487024cdea26251
 
 DONE:
 https://rlab.ru/doc/hdd_from_inside.html
