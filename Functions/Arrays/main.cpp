@@ -5,7 +5,7 @@
 #include"Sort.h"
 #include"Statistics.h"
 
-void main()
+/*void main()
 {
 	setlocale(LC_ALL, "");
 	const int n = 5;
@@ -37,4 +37,4 @@ void main()
 	Print(i_arr_2, ROWS, COLS);
 	cout << "Сумма элементов массива:\t" << Sum(i_arr_2, ROWS, COLS) << endl;
 	cout << "Среднее-арифметическое элементов массива:\t" << Avg(i_arr_2, ROWS, COLS) << endl;
-}
+}*/
