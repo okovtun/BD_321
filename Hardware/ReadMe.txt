@@ -1,18 +1,18 @@
-https://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv1vW
+п»їhttps://www.youtube.com/watch?v=1OC_9iEGJ24&list=PLeqyOOqxeiIMr5G8nf1P8iQwzzwZIv1vW
 
 https://t.me/+ovxoPDMg4ZA0Yzk6
 
 TODO:
-1. Почитать: http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
+1. РџРѕС‡РёС‚Р°С‚СЊ: http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
 2. https://www.ntfs.com/index.html
-3. Используя программу WinHEX определить количетво и размер разделов на своем диске;
-4. Установить программу VMware Workstation:
+3. РСЃРїРѕР»СЊР·СѓСЏ РїСЂРѕРіСЂР°РјРјСѓ WinHEX РѕРїСЂРµРґРµР»РёС‚СЊ РєРѕР»РёС‡РµС‚РІРѕ Рё СЂР°Р·РјРµСЂ СЂР°Р·РґРµР»РѕРІ РЅР° СЃРІРѕРµРј РґРёСЃРєРµ;
+4. РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РїСЂРѕРіСЂР°РјРјСѓ VMware Workstation:
 	https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
 	https://gist.github.com/PurpleVibe32/30a802c3c8ec902e1487024cdea26251
 
 DONE:
 https://rlab.ru/doc/hdd_from_inside.html
-https://www.youtube.com/watch?v=7onkTUts_-w&t=216s - смотреть обязательно!!!
+https://www.youtube.com/watch?v=7onkTUts_-w&t=216s - СЃРјРѕС‚СЂРµС‚СЊ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ!!!
 
 DONE:
 https://laptopmedia.com/top-laptop-pwm-ranking-rated-by-negative-impact-on-eyesight/#Lenovo
@@ -22,19 +22,19 @@ https://developer.nvidia.com/blog/nvidia-ampere-architecture-in-depth/
 https://www.ixbt.com/video3/guide.shtml
 
 DONE:
-Собрать мощный компьютер для игр и 3D-приложений на базе Intel. Подобрать следующие комплектующие:
+РЎРѕР±СЂР°С‚СЊ РјРѕС‰РЅС‹Р№ РєРѕРјРїСЊСЋС‚РµСЂ РґР»СЏ РёРіСЂ Рё 3D-РїСЂРёР»РѕР¶РµРЅРёР№ РЅР° Р±Р°Р·Рµ Intel. РџРѕРґРѕР±СЂР°С‚СЊ СЃР»РµРґСѓСЋС‰РёРµ РєРѕРјРїР»РµРєС‚СѓСЋС‰РёРµ:
 1. CPU;
 2. MB;
 3. RAM;
 4. Chassis;
 5. PSU;
-6. При необходимости систему охлаждения.
+6. РџСЂРё РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё СЃРёСЃС‚РµРјСѓ РѕС…Р»Р°Р¶РґРµРЅРёСЏ.
 
 DONE:
 https://ru.gecid.com/power/sovremennyee_bloki_pitaniya_atx_i_ih_harakteristiki/
 
 DONE:
-1. Оценить производителей корпусов: Cougar, be quite, Fractal Design, LianLi, MSI, NZXT;
+1. РћС†РµРЅРёС‚СЊ РїСЂРѕРёР·РІРѕРґРёС‚РµР»РµР№ РєРѕСЂРїСѓСЃРѕРІ: Cougar, be quite, Fractal Design, LianLi, MSI, NZXT;
 
 https://www.evga.com/products/E1-bare-bones/
 https://www.youtube.com/watch?v=A8KJwdVKTok&t=48s&pp=ygU70LLRgdC1INGH0YLQviDQvdGD0LbQvdC-INC30L3QsNGC0Ywg0L_RgNC-IENQVSDQutGD0LvQtdGA0Ys%3D
@@ -42,12 +42,12 @@ https://www.youtube.com/watch?v=mALfZmxyOQ4&t=435s
 https://www.youtube.com/watch?v=Tidws9NKS6c&t=364s
 
 DONE:
-1. Каким НЕ должен быть корпус: https://www.ixbt.com/supply/chieftec-ue-02b-op-review.html
-2. Каким должен быть корпус:	https://www.ixbt.com/supply/nzxt-h710i-review.html
-3. Дешевый и сердитый корпус:	https://www.citilink.ru/product/korpus-atx-formula-v-line-6000-rgb-full-tower-bez-bp-chernyi-1086208/properties/
+1. РљР°РєРёРј РќР• РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РєРѕСЂРїСѓСЃ: https://www.ixbt.com/supply/chieftec-ue-02b-op-review.html
+2. РљР°РєРёРј РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РєРѕСЂРїСѓСЃ:	https://www.ixbt.com/supply/nzxt-h710i-review.html
+3. Р”РµС€РµРІС‹Р№ Рё СЃРµСЂРґРёС‚С‹Р№ РєРѕСЂРїСѓСЃ:	https://www.citilink.ru/product/korpus-atx-formula-v-line-6000-rgb-full-tower-bez-bp-chernyi-1086208/properties/
 
 DONE:
-Подготовить доклад о шине USB
+РџРѕРґРіРѕС‚РѕРІРёС‚СЊ РґРѕРєР»Р°Рґ Рѕ С€РёРЅРµ USB
 
 Mainboard:
 https://www.ixbt.com/platform/asus-rog-strix-z790-a-gaming-wifi-d4-review.html#n1
@@ -60,9 +60,9 @@ https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml !!!
 https://www.ixbt.com/cpu/cpu-digest-2009.shtml
 
 TODO:
-Используя сайт ark.intel.com выписать сокеты всех поколений CPU 
-с двухканальным и четырехканальным контроллеров памяти.
-Так же выписать года когда появились эти CPU и сокеты.
+РСЃРїРѕР»СЊР·СѓСЏ СЃР°Р№С‚ ark.intel.com РІС‹РїРёСЃР°С‚СЊ СЃРѕРєРµС‚С‹ РІСЃРµС… РїРѕРєРѕР»РµРЅРёР№ CPU 
+СЃ РґРІСѓС…РєР°РЅР°Р»СЊРЅС‹Рј Рё С‡РµС‚С‹СЂРµС…РєР°РЅР°Р»СЊРЅС‹Рј РєРѕРЅС‚СЂРѕР»Р»РµСЂРѕРІ РїР°РјСЏС‚Рё.
+РўР°Рє Р¶Рµ РІС‹РїРёСЃР°С‚СЊ РіРѕРґР° РєРѕРіРґР° РїРѕСЏРІРёР»РёСЃСЊ СЌС‚Рё CPU Рё СЃРѕРєРµС‚С‹.
 
 CPU manufacturing:
 https://ark.intel.com/
@@ -79,11 +79,11 @@ TODO:
 https://www.youtube.com/watch?v=z0jQZxH7NgM
 
 DONE:
-1. Выучить теорию!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-2. Вычислить максимальный объем адресуемой памяти для архитектуры x86-64.
+1. Р’С‹СѓС‡РёС‚СЊ С‚РµРѕСЂРёСЋ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2. Р’С‹С‡РёСЃР»РёС‚СЊ РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ РѕР±СЉРµРј Р°РґСЂРµСЃСѓРµРјРѕР№ РїР°РјСЏС‚Рё РґР»СЏ Р°СЂС…РёС‚РµРєС‚СѓСЂС‹ x86-64.
 
 DONE:
-При помощи CPU-Z и AIDA-64 опрделить дополнительные наборы инстукций своего CPU
+РџСЂРё РїРѕРјРѕС‰Рё CPU-Z Рё AIDA-64 РѕРїСЂРґРµР»РёС‚СЊ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РЅР°Р±РѕСЂС‹ РёРЅСЃС‚СѓРєС†РёР№ СЃРІРѕРµРіРѕ CPU
 
 -----------------------------------------------------------------
 
@@ -94,8 +94,8 @@ https://www.ixbt.com/mainboard/ddr3-rmma.shtml
 https://www.ixbt.com/mainboard/ddr2-rmma.shtml
 
 DONE:
-1. Для каждого типа микросхем памяти найти техпроцесс и напряжение питания;
-2. Напомнить преподавателю про маркировку модулей памяти.
+1. Р”Р»СЏ РєР°Р¶РґРѕРіРѕ С‚РёРїР° РјРёРєСЂРѕСЃС…РµРј РїР°РјСЏС‚Рё РЅР°Р№С‚Рё С‚РµС…РїСЂРѕС†РµСЃСЃ Рё РЅР°РїСЂСЏР¶РµРЅРёРµ РїРёС‚Р°РЅРёСЏ;
+2. РќР°РїРѕРјРЅРёС‚СЊ РїСЂРµРїРѕРґР°РІР°С‚РµР»СЋ РїСЂРѕ РјР°СЂРєРёСЂРѕРІРєСѓ РјРѕРґСѓР»РµР№ РїР°РјСЏС‚Рё.
 
 -----------------------------------------------------------------
 
@@ -103,7 +103,7 @@ Install:
 https://www.cpuid.com/softwares/cpu-z.html
 
 DONE:
-1. Выучить теорию!
-2. Используя программу CPU-Z определить конфигурацию ОЗУ на своем компьютере:
-   Тип микросхем памяти, реальную частоту, эффективную частоту, частоту синхронизации,
-   и пропускную способность.
+1. Р’С‹СѓС‡РёС‚СЊ С‚РµРѕСЂРёСЋ!
+2. РСЃРїРѕР»СЊР·СѓСЏ РїСЂРѕРіСЂР°РјРјСѓ CPU-Z РѕРїСЂРµРґРµР»РёС‚СЊ РєРѕРЅС„РёРіСѓСЂР°С†РёСЋ РћР—РЈ РЅР° СЃРІРѕРµРј РєРѕРјРїСЊСЋС‚РµСЂРµ:
+   РўРёРї РјРёРєСЂРѕСЃС…РµРј РїР°РјСЏС‚Рё, СЂРµР°Р»СЊРЅСѓСЋ С‡Р°СЃС‚РѕС‚Сѓ, СЌС„С„РµРєС‚РёРІРЅСѓСЋ С‡Р°СЃС‚РѕС‚Сѓ, С‡Р°СЃС‚РѕС‚Сѓ СЃРёРЅС…СЂРѕРЅРёР·Р°С†РёРё,
+   Рё РїСЂРѕРїСѓСЃРєРЅСѓСЋ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ.
