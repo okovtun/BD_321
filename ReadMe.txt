@@ -12,6 +12,10 @@ devenv:
 https://www.youtube.com/watch?v=cLBwgKNIlNw
 
 TODO:
+https://legacy.cplusplus.com/doc/tutorial/functions2/
+В ветке 'Templates' шаблонизировать все функции для работы с массивами и проветрить их.
+
+DONE:
 Реализовать функцию void Move(???), которая будет устанавливать в соответствующую позицию на поле X или 0;
 
 DONE:
