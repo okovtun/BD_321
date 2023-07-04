@@ -4,6 +4,8 @@ https://t.me/+ovxoPDMg4ZA0Yzk6
 
 ISO Images:
 https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sharing
+https://drive.google.com/file/d/1fldruT1mC5kGLd7GWu2fU4QVFmd2WL2s/view?usp=drive_link BootFlash
+
 
 TODO:
 1. Изучить технологию RAID: RAID-0, RAID-1, RAID-5, RAID-6;
