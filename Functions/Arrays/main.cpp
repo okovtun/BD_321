@@ -4,13 +4,29 @@ using namespace std;
 #define tab "\t"
 #define delimiter "\n----------------------------------\n"
 
+const int ROWS = 3;
+const int COLS = 5;
+
 void FillRand(int arr[], const int n);
-void Print(const int arr[], const int n);
+void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS);
+
+//template - показывает объявление шаблона
+//typename - показывает создание шаблонного типа
+//T - имя шаблонного типа
+template<typename T>
+void Print(const T arr[], const int n);
+template<typename T>
+void Print(const T arr[ROWS][COLS], const int ROWS, const int COLS);
+
 void Sort(int arr[], const int n);
-int  Sum(const int arr[], const int n);
-double Avg(const int arr[], const int n);
-int minValueIn(const int arr[], const int n);
-int maxValueIn(const int arr[], const int n);
+template<typename T>
+T  Sum(const T arr[], const int n);
+template<typename T>
+double Avg(const T arr[], const int n);
+template<typename T>
+T minValueIn(const T arr[], const int n);
+template<typename T>
+T maxValueIn(const T arr[], const int n);
 
 void main()
 {
@@ -38,6 +54,21 @@ void main()
 	cout << "Максимальное значение в массиве: " << maxValueIn(brr, SIZE) << endl;
 	Sort(brr, SIZE);
 	Print(brr, SIZE);
+
+	cout << delimiter << endl;
+
+	double d_arr[8] = {2.5, 2.7, 3.14, 5.8, 4.3};
+	Print(d_arr, 8);
+	cout << "Сумма элементов массива: " << Sum(d_arr, 8) << endl;
+	cout << "Среднее-арифметическое элементов массива: " << Avg(d_arr, 8) << endl;
+	cout << "Минимальное значение в массиве: " << minValueIn(d_arr, 8) << endl;
+	cout << "Максимальное значение в массиве: " << maxValueIn(d_arr, 8) << endl;
+
+	cout << delimiter << endl;
+
+	int i_arr_2[ROWS][COLS];
+	FillRand(i_arr_2, ROWS, COLS);
+	Print(i_arr_2, ROWS, COLS);
 }
 
 void FillRand(int arr[], const int n)
@@ -48,7 +79,18 @@ void FillRand(int arr[], const int n)
 		arr[i] = rand() % 100;
 	}
 }
-void Print(const int arr[], const int n)
+void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			arr[i][j] = rand() % 100;
+		}
+	}
+}
+template<typename T>
+void Print(const T arr[], const int n)
 {
 	//Вывод массива на экран:
 	for (int i = 0; i < n; i++)
@@ -56,6 +98,18 @@ void Print(const int arr[], const int n)
 		cout << arr[i] << tab;
 	}
 	cout << endl;
+}
+template<typename T>
+void Print(const T arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			cout << arr[i][j] << tab;
+		}
+		cout << endl;
+	}
 }
 void Sort(int arr[], const int n)
 {
@@ -73,31 +127,35 @@ void Sort(int arr[], const int n)
 		}
 	}
 }
-int  Sum(const int arr[], const int n)
+template<typename T>
+T  Sum(const T arr[], const int n)
 {
-	int sum = 0;
+	T sum = 0;
 	for (int i = 0; i < n; i++)
 	{
 		sum += arr[i];
 	}
 	return sum;
 }
-double Avg(const int arr[], const int n)
+template<typename T>
+double Avg(const T arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;
 }
-int minValueIn(const int arr[], const int n)
+template<typename T>
+T minValueIn(const T arr[], const int n)
 {
-	int min = arr[0];
+	T min = arr[0];
 	for (int i = 0; i < n; i++)
 	{
 		if (arr[i] < min)min = arr[i];
 	}
 	return min;
 }
-int maxValueIn(const int arr[], const int n)
+template<typename T>
+T maxValueIn(const T arr[], const int n)
 {
-	int max = arr[0];
+	T max = arr[0];
 	for (int i = 0; i < n; i++)
 	{
 		if (arr[i] > max)max = arr[i];
