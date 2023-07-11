@@ -13,10 +13,12 @@ https://www.youtube.com/watch?v=cLBwgKNIlNw
 
 TODO:
 https://legacy.cplusplus.com/doc/tutorial/functions2/
+0. Выучить разделы диска!!!!!!!!!!!!!!!!!! http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
 1. В ветке 'Templates' шаблонизировать все функции для работы с массивами и проветрить их;
 2. От ветки 'Templates' создать ветку 'separated_templates' и в ней вынести шаблонные функции в отдельные файлы;
 3. От ветки 'separated_templates' создать ветку 'templated_lib_check', в ней собрать библиотеку шаблонных функций,
    и проветрить эту библиотеку на отдельном проекте.
+   https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Exporting_And_Importing_Templates
 
 DONE:
 Реализовать функцию void Move(???), которая будет устанавливать в соответствующую позицию на поле X или 0;

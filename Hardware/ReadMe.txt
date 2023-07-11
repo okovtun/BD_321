@@ -6,8 +6,15 @@ ISO Images:
 https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sharing
 https://drive.google.com/file/d/1fldruT1mC5kGLd7GWu2fU4QVFmd2WL2s/view?usp=drive_link BootFlash
 
-
 TODO:
+1. Что такое виртуальная память Windows;
+2. Исходя из первого пункта, выключить файл подкачки в основной системе, и протестировать работу системы без него;
+3. Изучить восстановление системы Windows по контрольным точкам;
+
+DONE:
+Создать виртуальную машину Windows Server 2003 Enterprise Edition и установить на нее Windows Server 2003 Enterprise Edition;
+
+DONE:
 1. Изучить технологию RAID: RAID-0, RAID-1, RAID-5, RAID-6;
 
 DONE:
