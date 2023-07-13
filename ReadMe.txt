@@ -12,6 +12,10 @@ devenv:
 https://www.youtube.com/watch?v=cLBwgKNIlNw
 
 TODO:
+1. Выучить теорию по Указателям;
+2. Нарисовать передачу параметров в функцию по указателю;
+
+TODO:
 https://legacy.cplusplus.com/doc/tutorial/functions2/
 0. Выучить разделы диска!!!!!!!!!!!!!!!!!! http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
 1. В ветке 'Templates' шаблонизировать все функции для работы с массивами и проветрить их;
