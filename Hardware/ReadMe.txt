@@ -7,6 +7,11 @@ https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sha
 https://drive.google.com/file/d/1fldruT1mC5kGLd7GWu2fU4QVFmd2WL2s/view?usp=drive_link BootFlash
 
 TODO:
+1. Залить GRUB4DOS на свой компьютер. Вариантом загрузки по умолчанию должен быть 'Start Vista Load bootmgr From HD-0 Part-0';
+2. Добавить в меню загрузки Acronis2013.iso: https://drive.google.com/file/d/137ygEWGI4EygO9Gs9nCBOV02sLQMZ7Vk/view?usp=drive_link
+3. Создать резервную копию своей ОС;
+
+DONE:
 1. Что такое виртуальная память Windows;
 2. Исходя из первого пункта, выключить файл подкачки в основной системе, и протестировать работу системы без него;
 3. Изучить восстановление системы Windows по контрольным точкам;
