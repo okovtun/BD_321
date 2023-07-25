@@ -10,6 +10,8 @@ TODO:
 1. Залить GRUB4DOS на свой компьютер. Вариантом загрузки по умолчанию должен быть 'Start Vista Load bootmgr From HD-0 Part-0';
 2. Добавить в меню загрузки Acronis2013.iso: https://drive.google.com/file/d/137ygEWGI4EygO9Gs9nCBOV02sLQMZ7Vk/view?usp=drive_link
 3. Создать резервную копию своей ОС;
+4. Загрузить при помощи GRUB4DOS Kaspersky Rescue Disk. В журнал прислать MENU.LST;
+5. Загрузить при помощи GRUB4DOS Cureit rescue disk: https://free.drweb.com/aid_admin/
 
 DONE:
 1. Что такое виртуальная память Windows;
