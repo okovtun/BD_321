@@ -7,24 +7,26 @@ using std::endl;
 #define tab "\t"
 #define delimiter "\n-----------------------------------------------\n"
 
-int** Allocate(const int rows, const int cols);
-void Clear(int** arr, const int rows);
+template<typename T>T** Allocate(const int rows, const int cols);
+template<typename T>void Clear(T** arr, const int rows);
 
 void FillRand(int arr[], const int n);
+void FillRand(double arr[], const int n);
 void FillRand(int** arr, const int rows, const int cols);
+void FillRand(double** arr, const int rows, const int cols);
 
-void Print(int arr[], const int n);
-void Print(int** arr, const int rows, const int cols);
+template<typename T>void Print(T arr[], const int n);
+template<typename T>void Print(T** arr, const int rows, const int cols);
 
-int* push_back(int* arr, int& n, int value);
+template<typename T>T* push_back(T* arr, int& n, T value);
 int* push_front(int* arr, int& n, int value);
 int* insert(int* arr, int& n, int value, int index);
-int* pop_back(int arr[], int& n);
+template<typename T>T* pop_back(T arr[], int& n);
 int* pop_front(int arr[], int& n);
 int* erase(int arr[], int& n, int index);
 
-int** push_row_back(int** arr, int& rows, const int cols);	//добавляет пустую строку в конец двумерного динамическтого массива
-int** pop_row_back(int** arr, int& rows, const int cols);	//удаляет строку с конца двумерного динамическтого массива
+template<typename T>T** push_row_back(T** arr, int& rows, const int cols);	//добавляет пустую строку в конец двумерного динамическтого массива
+template<typename T>T** pop_row_back( T** arr, int& rows, const int cols);	//удаляет строку с конца двумерного динамическтого массива
 
 void push_coll_back(int** arr, const int rows, int& cols);
 void pop_coll_back(int** arr, const int rows, int& cols);
@@ -53,15 +55,28 @@ void main()
 	Print(arr, n);
 
 	int index;
-	/ cout << "Введите добавляемое значение: "; cin >> value;
-	/ cout << "Введите индекс добавляемого элемента:"; cin >> index;
-	/ arr = insert(arr, n, value, index);
-	/ Print(arr, n);
+	// cout << "Введите добавляемое значение: "; cin >> value;
+	// cout << "Введите индекс добавляемого элемента:"; cin >> index;
+	// arr = insert(arr, n, value, index);
+	// Print(arr, n);
 
 	Print(arr = pop_back(arr, n), n);
 	Print(arr = pop_front(arr, n), n);
 	cout << "Введите индекс удаляемого элемента:"; cin >> index;
 	Print(arr = erase(arr, n, index), n);
+
+	double* d_arr = new double[n] {};
+	FillRand(d_arr, n);
+	Print(d_arr, n);
+	double d_value;
+	cout << "Введите добавляемое значение: "; cin >> d_value;
+	d_arr = push_back(d_arr, n, d_value);
+	Print(d_arr, n);
+
+	Print(d_arr = pop_back(d_arr, n), n);
+	
+	delete[] d_arr;
+
 	//arr[-1] = 0;
 	//Memory leak
 	//delete[] buffer;
@@ -70,13 +85,14 @@ void main()
 	//delete[] fib;  
 #endif // DYNAMIC_MEMORY_1
 
+#ifdef DYNAMIC_MEMORY_2
 	int rows;
 	int cols;
 	cout << "Введите количество строк: "; cin >> rows;
 	cout << "Введите количество элементов строки: "; cin >> cols;
 
-	int** arr = Allocate(rows, cols);
-	
+	int** arr = Allocate<int>(rows, cols);
+
 	//////////////////////////////////////////////////////////////////////////////////
 	///				Использование двумерного динамического массива					//
 	//////////////////////////////////////////////////////////////////////////////////
@@ -96,7 +112,23 @@ void main()
 	pop_coll_back(arr, rows, cols);
 	Print(arr, rows, cols);
 
+	cout << delimiter << endl;
+	cout << delimiter << endl;
+
+	int d_rows = rows;
+	int d_cols = cols;
+	double** d_arr_2 = Allocate<double>(d_rows, d_cols);
+	FillRand(d_arr_2, d_rows, d_cols);
+	Print(d_arr_2, d_rows, d_cols);
+	cout << delimiter << endl;
+	d_arr_2 = push_row_back(d_arr_2, d_rows, d_cols);
+	Print(d_arr_2, d_rows, d_cols);
+
+
+	Clear(d_arr_2, rows);
 	Clear(arr, rows);
+#endif // DYNAMIC_MEMORY_2
+
 }
 
 /*
@@ -107,22 +139,22 @@ void main()
 ------------------------------------------------
 */
 
-int** Allocate(const int rows, const int cols)
+template<typename T>T** Allocate(const int rows, const int cols)
 {
 	//////////////////////////////////////////////////////////////////////////////////
 	///				Объявление двумерного динамического массива						//
 	//////////////////////////////////////////////////////////////////////////////////
 
 	//1) Создаем массив указателей:
-	int** arr = new int*[rows];
+	T** arr = new T*[rows];
 	//2) Выделяем память под строки:
 	for (int i = 0; i < rows; i++)
 	{
-		arr[i] = new int[cols] {};
+		arr[i] = new T[cols] {};
 	}
 	return arr;
 }
-void Clear(int** arr, const int rows)
+template<typename T>void Clear(T** arr, const int rows)
 {
 	//////////////////////////////////////////////////////////////////////////////////
 	///				Удаление двумерного динамического массива						//
@@ -143,6 +175,16 @@ void FillRand(int arr[], const int n)
 		*(arr + i) = rand() % 100;
 	}
 }
+void FillRand(double arr[], const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		//Обращение к элементам массива через арифметику указателей и оператор разыменования:
+		*(arr + i) = rand() % 10000;
+		*(arr + i) /= 100;
+	}
+}
+
 void FillRand(int** arr, const int rows, const int cols)
 {
 	for (int i = 0; i < rows; i++)
@@ -153,7 +195,19 @@ void FillRand(int** arr, const int rows, const int cols)
 		}
 	}
 }
-void Print(int arr[], const int n)
+void FillRand(double** arr, const int rows, const int cols)
+{
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < cols; j++)
+		{
+			arr[i][j] = rand() % 10000;
+			arr[i][j] /= 100;
+		}
+	}
+}
+
+template<typename T>void Print(T arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
@@ -163,7 +217,7 @@ void Print(int arr[], const int n)
 	}
 	cout << endl;
 }
-void Print(int** arr, const int rows, const int cols)
+template<typename T>void Print(T** arr, const int rows, const int cols)
 {
 	for (int i = 0; i < rows; i++)
 	{
@@ -174,10 +228,11 @@ void Print(int** arr, const int rows, const int cols)
 		cout << endl;
 	}
 }
-int* push_back(int* arr, int& n, int value)
+
+template<typename T>T* push_back(T* arr, int& n, T value)
 {
 	//1) Создаем буферный массив:
-	int* buffer = new int[n + 1];
+	T* buffer = new T[n + 1];
 	//2) Копируем данные из исходного массива в буферный:
 	for (int i = 0; i < n; i++)
 	{
@@ -220,9 +275,9 @@ int* insert(int* arr, int& n, int value, int index)
 	return buffer;
 }
 
-int* pop_back(int arr[], int& n)
+template<typename T>T* pop_back(T arr[], int& n)
 {
-	int* buffer = new int[--n];
+	T* buffer = new T[--n];
 	for (int i = 0; i < n; i++)buffer[i] = arr[i];
 	delete[] arr;
 	return buffer;
@@ -253,24 +308,24 @@ int* erase(int arr[], int& n, int index)
 	return buffer;
 }
 
-int** push_row_back(int** arr, int& rows, const int cols)
+template<typename T>T** push_row_back(T** arr, int& rows, const int cols)
 {
 	//1) Создаем буферный массив указателей:
-	int** buffer = new int*[rows + 1]{};
+	T** buffer = new T*[rows + 1]{};
 	//2) Копируем адреса строк в новый массив:
 	for (int i = 0; i < rows; i++)buffer[i] = arr[i];
 	//3) Удаляем исходный массив указателей:
 	delete[] arr;
 	//4) Создаем добавляемую строку:
-	buffer[rows] = new int[cols] {};
+	buffer[rows] = new T[cols] {};
 	//5) После добавления строки, количество строк увеличивается на 1:
 	rows++;
 	return buffer;
 }
-int** pop_row_back(int** arr, int& rows, const int cols)
+template<typename T>T** pop_row_back( T** arr, int& rows, const int cols)
 {
 	delete[] arr[rows - 1];
-	int** buffer = new int*[--rows]{};
+	T** buffer = new T*[--rows]{};
 	for (int i = 0; i < rows; i++)buffer[i] = arr[i];
 	delete[] arr;
 	return buffer;
