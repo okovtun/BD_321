@@ -7,6 +7,9 @@ using std::endl;
 #define tab "\t"
 #define delimiter "\n-----------------------------------------------\n"
 
+int** Allocate(const int rows, const int cols);
+void Clear(int** arr, const int rows);
+
 void FillRand(int arr[], const int n);
 void FillRand(int** arr, const int rows, const int cols);
 
@@ -21,6 +24,10 @@ int* pop_front(int arr[], int& n);
 int* erase(int arr[], int& n, int index);
 
 int** push_row_back(int** arr, int& rows, const int cols);	//добавляет пустую строку в конец двумерного динамическтого массива
+int** pop_row_back(int** arr, int& rows, const int cols);	//удаляет строку с конца двумерного динамическтого массива
+
+void push_coll_back(int** arr, const int rows, int& cols);
+void pop_coll_back(int** arr, const int rows, int& cols);
 
 //#define DYNAMIC_MEMORY_1
 #define DYNAMIC_MEMORY_2
@@ -68,18 +75,8 @@ void main()
 	cout << "Введите количество строк: "; cin >> rows;
 	cout << "Введите количество элементов строки: "; cin >> cols;
 
-	//////////////////////////////////////////////////////////////////////////////////
-	///				Объявление двумерного динамического массива						//
-	//////////////////////////////////////////////////////////////////////////////////
-
-	//1) Создаем массив указателей:
-	int** arr = new int*[rows];
-	//2) Выделяем память под строки:
-	for(int i=0; i< rows; i++)
-	{
-		arr[i] = new int[cols] {};
-	}
-
+	int** arr = Allocate(rows, cols);
+	
 	//////////////////////////////////////////////////////////////////////////////////
 	///				Использование двумерного динамического массива					//
 	//////////////////////////////////////////////////////////////////////////////////
@@ -90,7 +87,43 @@ void main()
 
 	arr = push_row_back(arr, rows, cols);
 	Print(arr, rows, cols);
+	cout << delimiter << endl;
+	Print(arr = pop_row_back(arr, rows, cols), rows, cols);
+	cout << delimiter << endl;
+	push_coll_back(arr, rows, cols);
+	Print(arr, rows, cols);
+	cout << delimiter << endl;
+	pop_coll_back(arr, rows, cols);
+	Print(arr, rows, cols);
 
+	Clear(arr, rows);
+}
+
+/*
+------------------------------------------------
+1. Удаляется stack, например, статический массив;
+2. Оператор 'delete[]' два раза получает один и тот же адрес,
+   т.е., получает адрес уже удаленной памяти;
+------------------------------------------------
+*/
+
+int** Allocate(const int rows, const int cols)
+{
+	//////////////////////////////////////////////////////////////////////////////////
+	///				Объявление двумерного динамического массива						//
+	//////////////////////////////////////////////////////////////////////////////////
+
+	//1) Создаем массив указателей:
+	int** arr = new int*[rows];
+	//2) Выделяем память под строки:
+	for (int i = 0; i < rows; i++)
+	{
+		arr[i] = new int[cols] {};
+	}
+	return arr;
+}
+void Clear(int** arr, const int rows)
+{
 	//////////////////////////////////////////////////////////////////////////////////
 	///				Удаление двумерного динамического массива						//
 	//////////////////////////////////////////////////////////////////////////////////
@@ -102,15 +135,6 @@ void main()
 	//2) Удаление массива указателей:
 	delete[] arr;
 }
-
-/*
-------------------------------------------------
-1. Удаляется stack, например, статический массив;
-2. Оператор 'delete[]' два раза получает один и тот же адрес,
-   т.е., получает адрес уже удаленной памяти;
-------------------------------------------------
-*/
-
 void FillRand(int arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
@@ -242,4 +266,34 @@ int** push_row_back(int** arr, int& rows, const int cols)
 	//5) После добавления строки, количество строк увеличивается на 1:
 	rows++;
 	return buffer;
+}
+int** pop_row_back(int** arr, int& rows, const int cols)
+{
+	delete[] arr[rows - 1];
+	int** buffer = new int*[--rows]{};
+	for (int i = 0; i < rows; i++)buffer[i] = arr[i];
+	delete[] arr;
+	return buffer;
+}
+void push_coll_back(int** arr, const int rows, int& cols)
+{
+	for (int i = 0; i < rows; i++)
+	{
+		int* buffer = new int[cols + 1]{};
+		for (int j = 0; j < cols; j++)buffer[j] = arr[i][j];
+		delete[] arr[i];
+		arr[i] = buffer;
+	}
+	cols++;
+}
+void pop_coll_back(int** arr, const int rows, int& cols)
+{
+	cols--;
+	for (int i = 0; i < rows; i++)
+	{
+		int* buffer = new int[cols] {};
+		for (int j = 0; j < cols; j++)buffer[j] = arr[i][j];
+		delete[] arr[i];
+		arr[i] = buffer;
+	}
 }
