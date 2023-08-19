@@ -234,20 +234,15 @@ template<typename T>T* push_back(T* arr, int& n, T value)
 	//1) Создаем буферный массив:
 	T* buffer = new T[n + 1];
 	//2) Копируем данные из исходного массива в буферный:
-	for (int i = 0; i < n; i++)
-	{
-		buffer[i] = arr[i];
-	}
+	for (int i = 0; i < n; i++)	buffer[i] = arr[i];
 	//3) Удаляем исходны массив:
 	delete[] arr;
-	//4) Поменяем адрес исходного массива адресом нового массива:
-	arr = buffer;
-	//5) Только после этого можно добавить элемент в конец массива 'arr':
-	arr[n] = value;
-	//6) Посде добавления элемента в конец массива, количество его элементов увеличивается на 1:
+	//4) Только после этого можно добавить элемент в конец массива 'arr':
+	buffer[n] = value;
+	//5) Посде добавления элемента в конец массива, количество его элементов увеличивается на 1:
 	n++;
-	//7) Mission complete, проверяем результат:
-	return arr;
+	//6) Mission complete, проверяем результат:
+	return buffer;
 }
 
 int* push_front(int* arr, int& n, int value)
@@ -310,45 +305,28 @@ int* erase(int arr[], int& n, int index)
 
 template<typename T>T** push_row_back(T** arr, int& rows, const int cols)
 {
-	//1) Создаем буферный массив указателей:
-	T** buffer = new T*[rows + 1]{};
-	//2) Копируем адреса строк в новый массив:
-	for (int i = 0; i < rows; i++)buffer[i] = arr[i];
-	//3) Удаляем исходный массив указателей:
-	delete[] arr;
-	//4) Создаем добавляемую строку:
-	buffer[rows] = new T[cols] {};
-	//5) После добавления строки, количество строк увеличивается на 1:
-	rows++;
-	return buffer;
+	return push_back(arr, rows, new T[cols]{});
 }
 template<typename T>T** pop_row_back( T** arr, int& rows, const int cols)
 {
 	delete[] arr[rows - 1];
-	T** buffer = new T*[--rows]{};
-	for (int i = 0; i < rows; i++)buffer[i] = arr[i];
-	delete[] arr;
-	return buffer;
+	return pop_back(arr, rows);
 }
 void push_coll_back(int** arr, const int rows, int& cols)
 {
 	for (int i = 0; i < rows; i++)
 	{
-		int* buffer = new int[cols + 1]{};
-		for (int j = 0; j < cols; j++)buffer[j] = arr[i][j];
-		delete[] arr[i];
-		arr[i] = buffer;
+		arr[i] = push_back(arr[i], cols, int());
+		cols--;
 	}
 	cols++;
 }
 void pop_coll_back(int** arr, const int rows, int& cols)
 {
-	cols--;
 	for (int i = 0; i < rows; i++)
 	{
-		int* buffer = new int[cols] {};
-		for (int j = 0; j < cols; j++)buffer[j] = arr[i][j];
-		delete[] arr[i];
-		arr[i] = buffer;
+		arr[i] = pop_back(arr[i], cols);
+		cols++;
 	}
+	cols--;
 }
