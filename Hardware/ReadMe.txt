@@ -3,6 +3,9 @@
 https://t.me/+ovxoPDMg4ZA0Yzk6
 
 TODO:
+Добить все остальные домашки.
+
+DONE:
 Зайти в папку System Volume Information на виртуальной машине.
 
 ISO Images:
